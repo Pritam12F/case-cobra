@@ -1,7 +1,8 @@
+import { Icons } from "@/components/Icons";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import { Phone } from "@/components/Phone";
+import { buttonVariants } from "@/components/ui/button";
 import { ArrowRight, Check, Star } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -132,13 +133,13 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  "The case feels durable and I even got a compliment on the
-                  design. Had the case for two and a half months now and{" "}
+                  &quot;The case feels durable and I even got a compliment on
+                  the design. Had the case for two and a half months now and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     the image is super clear
                   </span>
                   , on the case I had before, the image started fading into
-                  yellow-ish color after a couple weeks. Love it."
+                  yellow-ish color after a couple weeks. Love it.&quot;
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -185,7 +186,7 @@ export default function Home() {
                   alt="user"
                 />
                 <div className="flex flex-col">
-                  <p className="font-semibold">Josh</p>
+                  <p className="font-semibold">Pritam</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
                     <Check className="h-4 w-4 stroke-[3px] text-green-600" />
                     <p className="text-sm">Verified Purchase</p>
@@ -196,9 +197,7 @@ export default function Home() {
           </div>
         </MaxWidthWrapper>
 
-        <div className="pt-16">
-          <Reviews />
-        </div>
+        <div className="pt-16">{/* <Reviews /> */}</div>
       </section>
 
       <section>

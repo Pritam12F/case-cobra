@@ -13,7 +13,11 @@ export const Phone = ({ imgSrc, dark, ...props }: PhoneProps) => {
       {...props}
     >
       <img
-        src={dark ? "/phone-template-dark-edges" : "phone-template-white-edges"}
+        src={
+          dark
+            ? "/phone-template-dark-edges.png"
+            : "phone-template-white-edges.png"
+        }
         className="pointer-events-none z-50 select-none"
         alt="phone image"
       />
