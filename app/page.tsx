@@ -1,5 +1,8 @@
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
+import { Phone } from "@/components/Phone";
+import { ArrowRight, Check, Star } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,7 +12,6 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
-                {/* i forgot this div right here in the video, it's purely visual gradient and looks nice */}
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28" />
                 <img src="/snake-1.png" className="w-full" />
               </div>
@@ -166,14 +168,14 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  "I usually keep my phone together with my keys in my pocket
-                  and that led to some pretty heavy scratchmarks on all of my
-                  last phone cases. This one, besides a barely noticeable
+                  &quot;I usually keep my phone together with my keys in my
+                  pocket and that led to some pretty heavy scratchmarks on all
+                  of my last phone cases. This one, besides a barely noticeable
                   scratch on the corner,{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     looks brand new after about half a year
                   </span>
-                  . I dig it."
+                  . I dig it.&quot;
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
