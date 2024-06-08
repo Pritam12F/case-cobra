@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { Icons } from "@/components/Icons";
 import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import { Phone } from "@/components/Phone";
@@ -14,6 +15,7 @@ export default function Home() {
           <div className="col-span-2 px-6 lg:px-0 lg:pt-4">
             <div className="relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="absolute w-28 left-0 -top-20 hidden lg:block">
+                {/* i forgot this div right here in the video, it's purely visual gradient and looks nice */}
                 <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28" />
                 <img src="/snake-1.png" className="w-full" />
               </div>
@@ -134,13 +136,13 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  &quot;The case feels durable and I even got a compliment on
-                  the design. Had the case for two and a half months now and{" "}
+                  "The case feels durable and I even got a compliment on the
+                  design. Had the case for two and a half months now and{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     the image is super clear
                   </span>
                   , on the case I had before, the image started fading into
-                  yellow-ish color after a couple weeks. Love it.&quot;
+                  yellow-ish color after a couple weeks. Love it."
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -170,14 +172,14 @@ export default function Home() {
               </div>
               <div className="text-lg leading-8">
                 <p>
-                  &quot;I usually keep my phone together with my keys in my
-                  pocket and that led to some pretty heavy scratchmarks on all
-                  of my last phone cases. This one, besides a barely noticeable
+                  "I usually keep my phone together with my keys in my pocket
+                  and that led to some pretty heavy scratchmarks on all of my
+                  last phone cases. This one, besides a barely noticeable
                   scratch on the corner,{" "}
                   <span className="p-0.5 bg-slate-800 text-white">
                     looks brand new after about half a year
                   </span>
-                  . I dig it.&quot;
+                  . I dig it."
                 </p>
               </div>
               <div className="flex gap-4 mt-2">
@@ -187,7 +189,7 @@ export default function Home() {
                   alt="user"
                 />
                 <div className="flex flex-col">
-                  <p className="font-semibold">Pritam</p>
+                  <p className="font-semibold">Josh</p>
                   <div className="flex gap-1.5 items-center text-zinc-600">
                     <Check className="h-4 w-4 stroke-[3px] text-green-600" />
                     <p className="text-sm">Verified Purchase</p>
@@ -231,7 +233,7 @@ export default function Home() {
                 />
               </div>
 
-              <Phone className="w-60" imgSrc="/horse_phone.jpg" />
+              {/* <Phone className="w-60" imgSrc="/horse_phone.jpg" /> */}
             </div>
           </div>
 
@@ -266,6 +268,9 @@ export default function Home() {
             </div>
           </ul>
         </MaxWidthWrapper>
+      </section>
+      <section>
+        <Footer />
       </section>
     </div>
   );
